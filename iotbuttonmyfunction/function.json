@@ -1,0 +1,15 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "eventHubTrigger",
+      "direction": "in",
+      "name": "req",
+      "path": "iotHubName",
+      "connection": "AzureIoTHubEventHubConnectionString",
+      "cardinality": "many",
+      "consumerGroup": "$Default"
+    }
+  ]
+}
