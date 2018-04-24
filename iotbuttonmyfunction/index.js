@@ -1,17 +1,9 @@
-module.exports = function (context, req) {
-    context.log('JavaScript HTTP trigger function processed a request.');
-
-    if (req.query.name || (req.body && req.body.name)) {
-        context.res = {
-            // status: 200, /* Defaults to 200 */
-            body: "Hello " + (req.query.name || req.body.name)
-        };
-    }
-    else {
-        context.res = {
-            status: 400,
-            body: "Please pass a name on the query string or in the request body"
-        };
-    }
+module.exports = function (context, IoTHubMessages) {
+    context.log(`JavaScript eventhub trigger function called for message array ${IoTHubMessages}`);
+  
+    IoTHubMessages.forEach(message => {
+      context.log(`Processed message ${message}`);
+    });
+  
     context.done();
-};
+  }
