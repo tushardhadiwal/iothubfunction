@@ -5,8 +5,8 @@
       "authLevel": "anonymous",
       "type": "eventHubTrigger",
       "direction": "in",
-      "name": "req",
-      "path": "iotHubName",
+      "name": "IoTHubMessages",
+      "path": "myhubtushar",
       "connection": "AzureIoTHubEventHubConnectionString",
       "cardinality": "many",
       "consumerGroup": "$Default"
