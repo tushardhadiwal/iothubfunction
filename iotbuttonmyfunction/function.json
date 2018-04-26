@@ -6,7 +6,7 @@
       "type": "eventHubTrigger",
       "direction": "in",
       "name": "IoTHubMessages",
-      "path": "iotHubName",
+      "path": "myhubtushar",
       "connection": "AzureIoTHubEventHubConnectionString",
       "cardinality": "many",
       "consumerGroup": "$Default"
